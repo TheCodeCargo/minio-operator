@@ -1319,6 +1319,9 @@ func (c *Controller) syncHandler(key string) (Result, error) {
 		}
 	}
 
+	klog.V(2).Infof("using new version of the minio")
+	c.RegisterEvent(ctx, tenant, corev1.EventTypeWarning, "NewMinioVersion", fmt.Sprintf("Using the new version of the minio"))
+
 	// Ensure we are only provisioning users one time
 	if !tenant.Status.ProvisionedUsers && len(tenant.Spec.Users) > 0 {
 		if err := c.createUsers(ctx, tenant, tenantConfiguration); err != nil {
