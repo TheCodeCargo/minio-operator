@@ -22,7 +22,7 @@ import (
 	"crypto/sha1"
 	"strings"
 
-	"github.com/minio/operator/pkg/auth/token"
+	"github.com/TheCodeCargo/minio-operator/pkg/auth/token"
 	"github.com/minio/pkg/env"
 	"golang.org/x/crypto/pbkdf2"
 )

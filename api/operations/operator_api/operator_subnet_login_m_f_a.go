@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/operator/models"
+	"github.com/TheCodeCargo/minio-operator/models"
 )
 
 // OperatorSubnetLoginMFAHandlerFunc turns a function with the right signature into a operator subnet login m f a handler

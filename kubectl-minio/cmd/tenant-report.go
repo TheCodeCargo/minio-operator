@@ -23,8 +23,8 @@ import (
 	"io"
 	"os"
 
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 	"github.com/minio/kubectl-minio/cmd/helpers"
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
 	"github.com/spf13/cobra"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

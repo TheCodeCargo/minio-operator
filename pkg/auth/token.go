@@ -33,8 +33,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/TheCodeCargo/minio-operator/pkg/auth/token"
 	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/minio/operator/pkg/auth/token"
 	"github.com/secure-io/sio-go/sioutil"
 	"golang.org/x/crypto/chacha20"
 	"golang.org/x/crypto/chacha20poly1305"

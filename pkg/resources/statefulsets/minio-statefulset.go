@@ -21,10 +21,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/minio/operator/pkg/certs"
-	"github.com/minio/operator/pkg/common"
+	"github.com/TheCodeCargo/minio-operator/pkg/certs"
+	"github.com/TheCodeCargo/minio-operator/pkg/common"
 
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	v1 "k8s.io/api/core/v1"

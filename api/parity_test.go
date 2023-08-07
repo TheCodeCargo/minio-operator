@@ -22,10 +22,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/operator/api/operations/operator_api"
+	"github.com/TheCodeCargo/minio-operator/api/operations/operator_api"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/minio/operator/models"
+	"github.com/TheCodeCargo/minio-operator/models"
 )
 
 func Test_getParityInfo(t *testing.T) {

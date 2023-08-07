@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/operator/models"
+	"github.com/TheCodeCargo/minio-operator/models"
 )
 
 // GetTenantPodsHandlerFunc turns a function with the right signature into a get tenant pods handler

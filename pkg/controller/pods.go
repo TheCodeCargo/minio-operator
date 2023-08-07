@@ -20,7 +20,7 @@ import (
 	"context"
 	"fmt"
 
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/runtime"

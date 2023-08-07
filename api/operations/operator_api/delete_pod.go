@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/operator/models"
+	"github.com/TheCodeCargo/minio-operator/models"
 )
 
 // DeletePodHandlerFunc turns a function with the right signature into a delete pod handler

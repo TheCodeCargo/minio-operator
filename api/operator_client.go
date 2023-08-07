@@ -19,8 +19,8 @@ package api
 import (
 	"context"
 
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
-	operatorClientset "github.com/minio/operator/pkg/client/clientset/versioned"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
+	operatorClientset "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 )

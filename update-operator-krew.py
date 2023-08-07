@@ -9,7 +9,7 @@ metadata:
   name: minio
 spec:
   version: {version}
-  homepage: https://github.com/minio/operator/tree/master/kubectl-minio
+  homepage: https://github.com/TheCodeCargo/minio-operator/tree/master/kubectl-minio
   shortDescription: Deploy and manage MinIO Operator and Tenant(s)
   description: |
     The kubectl-minio plugin wraps the MinIO Operator and provides a simplified 
@@ -21,7 +21,7 @@ spec:
   platforms:
 """
 
-main_url = "https://github.com/minio/operator/releases/download/{version}/kubectl-minio_{os}_{arch}{suffix}.zip"
+main_url = "https://github.com/TheCodeCargo/minio-operator/releases/download/{version}/kubectl-minio_{os}_{arch}{suffix}.zip"
 
 builds = {
     "darwin": [
@@ -55,7 +55,7 @@ for os_key in builds:
       matchLabels:
         os: {os_key}
         arch: {arch_key['arch']}
-    uri: https://github.com/minio/operator/releases/download/{version}/kubectl-minio_{os_key}_{arch_key['arch']}{arch_key['suffix']}.zip
+    uri: https://github.com/TheCodeCargo/minio-operator/releases/download/{version}/kubectl-minio_{os_key}_{arch_key['arch']}{arch_key['suffix']}.zip
     sha256: {hash}
     bin: kubectl-minio{binaryext}
 """

@@ -19,7 +19,7 @@ package logger
 import (
 	"context"
 
-	"github.com/minio/operator/pkg/logger/target/http"
+	"github.com/TheCodeCargo/minio-operator/pkg/logger/target/http"
 )
 
 // Audit/Logger constants

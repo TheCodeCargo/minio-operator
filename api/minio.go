@@ -20,8 +20,8 @@ import (
 	"strings"
 	"time"
 
-	xhttp "github.com/minio/operator/pkg/http"
-	"github.com/minio/operator/pkg/utils"
+	xhttp "github.com/TheCodeCargo/minio-operator/pkg/http"
+	"github.com/TheCodeCargo/minio-operator/pkg/utils"
 	"github.com/minio/pkg/env"
 )
 

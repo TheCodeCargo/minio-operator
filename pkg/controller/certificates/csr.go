@@ -20,8 +20,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/minio/operator/pkg/common"
-	"github.com/minio/operator/pkg/utils"
+	"github.com/TheCodeCargo/minio-operator/pkg/common"
+	"github.com/TheCodeCargo/minio-operator/pkg/utils"
 
 	certificatesV1 "k8s.io/api/certificates/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

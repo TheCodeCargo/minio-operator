@@ -21,10 +21,10 @@ import (
 	"io"
 	"strings"
 
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
+	operatorv1 "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned"
 	"github.com/minio/kubectl-minio/cmd/helpers"
 	"github.com/minio/kubectl-minio/cmd/resources"
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
-	operatorv1 "github.com/minio/operator/pkg/client/clientset/versioned"
 	"github.com/spf13/cobra"
 	corev1 "k8s.io/api/core/v1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"

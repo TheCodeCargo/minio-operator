@@ -21,10 +21,10 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/minio/operator/pkg/http"
+	"github.com/TheCodeCargo/minio-operator/pkg/http"
 
-	"github.com/minio/operator/api/operations/operator_api"
-	utils2 "github.com/minio/operator/pkg/utils"
+	"github.com/TheCodeCargo/minio-operator/api/operations/operator_api"
+	utils2 "github.com/TheCodeCargo/minio-operator/pkg/utils"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 )

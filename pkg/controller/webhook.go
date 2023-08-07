@@ -18,7 +18,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/minio/operator/pkg/common"
+	"github.com/TheCodeCargo/minio-operator/pkg/common"
 
 	"github.com/gorilla/mux"
 )

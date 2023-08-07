@@ -32,11 +32,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/operator/api"
-
+	"github.com/TheCodeCargo/minio-operator/api/operations"
+	"github.com/TheCodeCargo/minio-operator/models"
 	"github.com/go-openapi/loads"
-	"github.com/minio/operator/api/operations"
-	"github.com/minio/operator/models"
 	"github.com/stretchr/testify/assert"
 )
 

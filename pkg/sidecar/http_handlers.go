@@ -24,8 +24,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/TheCodeCargo/minio-operator/pkg/resources/services"
 	"github.com/gorilla/mux"
-	"github.com/minio/operator/pkg/resources/services"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 

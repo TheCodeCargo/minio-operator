@@ -17,7 +17,7 @@ package controller
 import (
 	"context"
 
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 )
 
 // RegisterEvent creates an event for a given tenant

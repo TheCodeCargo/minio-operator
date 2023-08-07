@@ -41,7 +41,7 @@ import (
 	flags "github.com/jessevdk/go-flags"
 	"golang.org/x/net/netutil"
 
-	"github.com/minio/operator/api/operations"
+	"github.com/TheCodeCargo/minio-operator/api/operations"
 )
 
 const (

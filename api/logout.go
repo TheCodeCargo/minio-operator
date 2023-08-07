@@ -19,11 +19,11 @@ package api
 import (
 	"net/http"
 
+	"github.com/TheCodeCargo/minio-operator/api/operations"
+	authApi "github.com/TheCodeCargo/minio-operator/api/operations/auth"
+	"github.com/TheCodeCargo/minio-operator/models"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/operator/api/operations"
-	authApi "github.com/minio/operator/api/operations/auth"
-	"github.com/minio/operator/models"
 )
 
 func registerLogoutHandlers(api *operations.OperatorAPI) {

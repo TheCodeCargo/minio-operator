@@ -1,7 +1,7 @@
 # Tenant deployment examples with kustomize
 
 This document explains various yaml files listed in
-the [examples directory](https://github.com/minio/operator/tree/master/examples/kustomization) used to deploy a Tenant
+the [examples directory](https://github.com/TheCodeCargo/minio-operator/tree/master/examples/kustomization) used to deploy a Tenant
 using MinIO Operator.
 
 ### Prerequisites
@@ -188,4 +188,4 @@ kustomize build examples/kustomization/tenant-nodeport  | kubectl apply -f -
 For additional examples on how to deploy a tenant
 with [LDAP](https://min.io/docs/minio/kubernetes/upstream/operations/external-iam/configure-ad-ldap-external-identity-management.html)
 or [OIDC](https://min.io/docs/minio/kubernetes/upstream/operations/external-iam/configure-openid-external-identity-management.html)
-you can look at the [examples directory](https://github.com/minio/operator/tree/master/examples/kustomization)
+you can look at the [examples directory](https://github.com/TheCodeCargo/minio-operator/tree/master/examples/kustomization)

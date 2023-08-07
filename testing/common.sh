@@ -127,7 +127,7 @@ function install_operator_version() {
   echo "Target operator release: $version"
   # Set OPERATOR_DEV_TEST to skip downloading these dependencies
   if [[ -z "${DEV_TEST}" ]]; then
-    sudo curl -#L "https://github.com/minio/operator/releases/download/v${version}/kubectl-minio_${version}_${OS}_${ARCH}" -o /usr/local/bin/kubectl-minio
+    sudo curl -#L "https://github.com/TheCodeCargo/minio-operator/releases/download/v${version}/kubectl-minio_${version}_${OS}_${ARCH}" -o /usr/local/bin/kubectl-minio
     sudo chmod +x /usr/local/bin/kubectl-minio
   fi
 
@@ -343,7 +343,7 @@ function install_tenant() {
     value=myminio
     echo "Installing lite tenant for version $1"
 
-    try kubectl apply -k "github.com/minio/operator/testing/tenant\?ref\=$1"
+    try kubectl apply -k "github.com/TheCodeCargo/minio-operator/testing/tenant\?ref\=$1"
   fi
 
   echo "Waiting for the tenant statefulset, this indicates the tenant is being fulfilled"

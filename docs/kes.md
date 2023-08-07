@@ -7,7 +7,7 @@ This document explains how to enable KES with MinIO Operator.
 ### Prerequisites
 
 - MinIO Operator up and running as explained in the [document here](https://github.com/minio/operator#operator-setup).
-- Install [`kubectl minio` plugin](https://github.com/minio/operator/tree/master/kubectl-minio#install-plugin).
+- Install [`kubectl minio` plugin](https://github.com/TheCodeCargo/minio-operator/tree/master/kubectl-minio#install-plugin).
 - KES requires a KMS backend in [configuration](https://raw.githubusercontent.com/minio/operator/master/examples/kes-secret.yaml). Currently KES supports [AWS Secrets Manager](https://github.com/minio/kes/wiki/AWS-SecretsManager) and [Hashicorp Vault](https://github.com/minio/kes/wiki/Hashicorp-Vault-Keystore) as KMS backend for production.S Set up one of these as the KMS backend before setting up KES.
 
 ### Create MinIO Tenant

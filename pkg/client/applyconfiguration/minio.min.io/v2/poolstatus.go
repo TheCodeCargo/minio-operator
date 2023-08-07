@@ -19,7 +19,7 @@
 package v2
 
 import (
-	v2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
+	v2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 )
 
 // PoolStatusApplyConfiguration represents an declarative configuration of the PoolStatus type for use

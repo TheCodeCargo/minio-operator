@@ -21,7 +21,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/minio/operator/pkg/common"
+	"github.com/TheCodeCargo/minio-operator/pkg/common"
 
 	"github.com/google/uuid"
 )

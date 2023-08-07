@@ -22,7 +22,7 @@ import (
 	"io/ioutil"
 	"regexp"
 
-	"github.com/minio/operator/pkg/http"
+	"github.com/TheCodeCargo/minio-operator/pkg/http"
 )
 
 // ErrCantDetermineMinIOImage when not able to find MinIO version

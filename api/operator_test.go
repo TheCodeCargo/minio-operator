@@ -21,7 +21,7 @@ import (
 	"errors"
 	"testing"
 
-	operatorClientset "github.com/minio/operator/pkg/client/clientset/versioned"
+	operatorClientset "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned"
 )
 
 type operatorClientTest struct {

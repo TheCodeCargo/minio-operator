@@ -22,10 +22,10 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/TheCodeCargo/minio-operator/models"
 	"github.com/go-openapi/swag"
 	"github.com/minio/madmin-go/v2"
 	"github.com/minio/minio-go/v7"
-	"github.com/minio/operator/models"
 )
 
 // Generic errors

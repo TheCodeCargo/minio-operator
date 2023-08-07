@@ -26,7 +26,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
 
-	operatorv1 "github.com/minio/operator/pkg/client/clientset/versioned"
+	operatorv1 "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned"
 	"github.com/spf13/cobra"
 )
 

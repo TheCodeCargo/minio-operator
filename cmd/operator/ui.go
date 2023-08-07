@@ -25,15 +25,13 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/minio/operator/api"
-
-	"github.com/minio/operator/pkg/logger"
-
+	"github.com/TheCodeCargo/minio-operator/api"
+	"github.com/TheCodeCargo/minio-operator/api/operations"
+	"github.com/TheCodeCargo/minio-operator/pkg/certs"
+	"github.com/TheCodeCargo/minio-operator/pkg/logger"
 	"github.com/go-openapi/loads"
 	"github.com/jessevdk/go-flags"
 	"github.com/minio/cli"
-	"github.com/minio/operator/api/operations"
-	"github.com/minio/operator/pkg/certs"
 )
 
 // starts the server

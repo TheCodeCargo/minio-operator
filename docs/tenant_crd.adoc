@@ -241,7 +241,7 @@ KESConfig (`kes`) defines the configuration of the https://github.com/minio/kes[
 |*`kesSecret`* __link:https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core[$$LocalObjectReference$$]__ 
 |*Required* + 
  Specify a https://kubernetes.io/docs/concepts/configuration/secret/[Kubernetes opaque secret] which contains environment variables to use for setting up the MinIO KES service. + 
- See the https://github.com/minio/operator/blob/master/examples/kes-secret.yaml[MinIO Operator `console-secret.yaml`] for an example.
+ See the https://github.com/TheCodeCargo/minio-operator/blob/master/examples/kes-secret.yaml[MinIO Operator `console-secret.yaml`] for an example.
 
 |*`externalCertSecret`* __xref:{anchor_prefix}-github-com-minio-operator-pkg-apis-minio-min-io-v2-localcertificatereference[$$LocalCertificateReference$$]__ 
 |*Optional* + 

@@ -36,10 +36,10 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 
-	"github.com/minio/operator/api/operations/auth"
-	"github.com/minio/operator/api/operations/operator_api"
-	"github.com/minio/operator/api/operations/user_api"
-	"github.com/minio/operator/models"
+	"github.com/TheCodeCargo/minio-operator/api/operations/auth"
+	"github.com/TheCodeCargo/minio-operator/api/operations/operator_api"
+	"github.com/TheCodeCargo/minio-operator/api/operations/user_api"
+	"github.com/TheCodeCargo/minio-operator/models"
 )
 
 // NewOperatorAPI creates a new Operator instance

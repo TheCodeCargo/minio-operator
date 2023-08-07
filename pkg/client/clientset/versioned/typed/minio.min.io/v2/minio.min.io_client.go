@@ -21,8 +21,8 @@ package v2
 import (
 	"net/http"
 
-	v2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
-	"github.com/minio/operator/pkg/client/clientset/versioned/scheme"
+	v2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
+	"github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
 )
 

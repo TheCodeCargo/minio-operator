@@ -33,13 +33,13 @@ import (
 
 	"github.com/minio/pkg/env"
 
-	"github.com/minio/operator/pkg"
+	"github.com/TheCodeCargo/minio-operator/pkg"
 	"github.com/minio/pkg/certs"
 
+	"github.com/TheCodeCargo/minio-operator/pkg/logger/config"
+	"github.com/TheCodeCargo/minio-operator/pkg/logger/message/log"
 	"github.com/minio/highwayhash"
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/minio/operator/pkg/logger/config"
-	"github.com/minio/operator/pkg/logger/message/log"
 )
 
 // HighwayHash key for logging in anonymous mode

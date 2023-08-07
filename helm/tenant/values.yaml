@@ -113,7 +113,7 @@ tenant:
     ## not provided. DNS name format is *.minio.default.svc.cluster.local
     certConfig: { }
   ## MinIO features to enable or disable in the MinIO Tenant
-  ## https://github.com/minio/operator/blob/master/docs/tenant_crd.adoc#features
+  ## https://github.com/TheCodeCargo/minio-operator/blob/master/docs/tenant_crd.adoc#features
   features:
     bucketDNS: false
     domains: { }
@@ -148,7 +148,7 @@ tenant:
   # Tenant scrape configuration will be added to prometheus managed by the prometheus-operator.
   prometheusOperator: false
   # Enable JSON, Anonymous logging for MinIO tenants.
-  # Refer https://github.com/minio/operator/blob/master/pkg/apis/minio.min.io/v2/types.go#L303
+  # Refer https://github.com/TheCodeCargo/minio-operator/blob/master/pkg/apis/minio.min.io/v2/types.go#L303
   # How logs will look:
   # $ k logs myminio-pool-0-0 -n default
   # {"level":"INFO","errKind":"","time":"2022-04-07T21:49:33.740058549Z","message":"All MinIO sub-systems initialized successfully"}

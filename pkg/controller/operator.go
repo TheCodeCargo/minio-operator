@@ -23,8 +23,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/minio/operator/pkg/common"
-	"github.com/minio/operator/pkg/utils"
+	"github.com/TheCodeCargo/minio-operator/pkg/common"
+	"github.com/TheCodeCargo/minio-operator/pkg/utils"
 	appsv1 "k8s.io/api/apps/v1"
 	v1 "k8s.io/api/core/v1"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
@@ -32,7 +32,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
 
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 	xcerts "github.com/minio/pkg/certs"
 	"github.com/minio/pkg/env"
 	"k8s.io/klog/v2"
@@ -112,7 +112,7 @@ func (c *Controller) getTransport() *http.Transport {
 	}
 
 	// These chunk of code is intended for OpenShift ONLY and it will help us trust the signer to solve issue:
-	// https://github.com/minio/operator/issues/1412
+	// https://github.com/TheCodeCargo/minio-operator/issues/1412
 	if utils.GetOperatorRuntime() == common.OperatorRuntimeOpenshift {
 		openShiftCATLSCert, err := c.kubeClientSet.CoreV1().Secrets("openshift-kube-controller-manager-operator").Get(
 			context.Background(), "csr-signer", metav1.GetOptions{})

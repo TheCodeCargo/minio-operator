@@ -20,10 +20,10 @@ import (
 	"context"
 	"errors"
 
+	"github.com/TheCodeCargo/minio-operator/api/operations"
+	"github.com/TheCodeCargo/minio-operator/api/operations/operator_api"
+	"github.com/TheCodeCargo/minio-operator/models"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/operator/api/operations"
-	"github.com/minio/operator/api/operations/operator_api"
-	"github.com/minio/operator/models"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	v1 "k8s.io/client-go/kubernetes/typed/core/v1"

@@ -27,10 +27,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/TheCodeCargo/minio-operator/pkg"
 	"github.com/minio/madmin-go/v2"
 	mcCmd "github.com/minio/mc/cmd"
 	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/operator/pkg"
 	iampolicy "github.com/minio/pkg/iam/policy"
 )
 

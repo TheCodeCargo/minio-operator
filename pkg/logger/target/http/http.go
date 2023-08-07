@@ -28,8 +28,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	xhttp "github.com/minio/operator/pkg/http"
-	"github.com/minio/operator/pkg/logger/target/types"
+	xhttp "github.com/TheCodeCargo/minio-operator/pkg/http"
+	"github.com/TheCodeCargo/minio-operator/pkg/logger/target/types"
 )
 
 // Timeout for the webhook http call

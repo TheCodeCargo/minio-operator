@@ -27,16 +27,16 @@ import (
 
 	"k8s.io/client-go/dynamic"
 
+	operatorv1 "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned"
 	"github.com/dustin/go-humanize"
 	"github.com/manifoldco/promptui"
-	operatorv1 "github.com/minio/operator/pkg/client/clientset/versioned"
 	"github.com/spf13/cobra"
 	apiextension "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
 	"k8s.io/apimachinery/pkg/api/resource"
 	"k8s.io/apimachinery/pkg/runtime"
 	"sigs.k8s.io/yaml"
 
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 	table "github.com/olekukonko/tablewriter"
 	"github.com/pkg/errors"
 	"k8s.io/client-go/kubernetes"

@@ -1,6 +1,6 @@
 # MinIO Operator
 
-![build](https://github.com/minio/operator/workflows/Go/badge.svg) ![license](https://img.shields.io/badge/license-AGPL%20V3-blue)
+![build](https://github.com/TheCodeCargo/minio-operator/workflows/Go/badge.svg) ![license](https://img.shields.io/badge/license-AGPL%20V3-blue)
 
 [![MinIO](https://raw.githubusercontent.com/minio/minio/master/.github/logo.svg?sanitize=true)](https://min.io)
 
@@ -184,7 +184,7 @@ kubectl minio version
 ```
 
 As an alternative to `krew`, you can download the `kubectl-minio` plugin from
-the [Operator Releases Page](https://github.com/minio/operator/releases). Download the `kubectl-minio` package
+the [Operator Releases Page](https://github.com/TheCodeCargo/minio-operator/releases). Download the `kubectl-minio` package
 appropriate for your operating system and extract the contents as `kubectl-minio`. Set the `kubectl-minio` binary to be
 executable (e.g. `chmod +x`) and place it in your system `PATH`.
 
@@ -192,7 +192,7 @@ For example, the following code downloads the latest stable version of the MinIO
 the system ``$PATH``. The example assumes a Linux operating system:
 
 ```sh
-wget -qO- https://github.com/minio/operator/releases/latest/download/kubectl-minio_linux_amd64_v1.zip | sudo bsdtar -xvf- -C /usr/local/bin
+wget -qO- https://github.com/TheCodeCargo/minio-operator/releases/latest/download/kubectl-minio_linux_amd64_v1.zip | sudo bsdtar -xvf- -C /usr/local/bin
 sudo chmod +x /usr/local/bin/kubectl-minio
 ```
 
@@ -346,12 +346,12 @@ Use of MinIO Operator is governed by the GNU AGPLv3 or later, found in the [LICE
 - [Deploy a MinIO Tenant using the MinIO Plugin](https://min.io/docs/minio/kubernetes/upstream/operations/install-deploy-manage/deploy-minio-tenant.html)
 - [Configure TLS/SSL for MinIO Tenants](https://min.io/docs/minio/kubernetes/upstream/operations/network-encryption.html)
 
-[Github Resources](https://github.com/minio/operator/blob/master/docs/)
+[Github Resources](https://github.com/TheCodeCargo/minio-operator/blob/master/docs/)
 
-- [Examples for MinIO Tenant Settings](https://github.com/minio/operator/blob/master/docs/examples.md)
-- [Custom Hostname Discovery](https://github.com/minio/operator/blob/master/docs/custom-name-templates.md).
-- [Apply PodSecurityPolicy](https://github.com/minio/operator/blob/master/docs/pod-security-policy.md).
-- [Deploy MinIO Tenant with Console](https://github.com/minio/operator/blob/master/docs/console.md).
-- [Deploy MinIO Tenant with KES](https://github.com/minio/operator/blob/master/docs/kes.md).
+- [Examples for MinIO Tenant Settings](https://github.com/TheCodeCargo/minio-operator/blob/master/docs/examples.md)
+- [Custom Hostname Discovery](https://github.com/TheCodeCargo/minio-operator/blob/master/docs/custom-name-templates.md).
+- [Apply PodSecurityPolicy](https://github.com/TheCodeCargo/minio-operator/blob/master/docs/pod-security-policy.md).
+- [Deploy MinIO Tenant with Console](https://github.com/TheCodeCargo/minio-operator/blob/master/docs/console.md).
+- [Deploy MinIO Tenant with KES](https://github.com/TheCodeCargo/minio-operator/blob/master/docs/kes.md).
 - [Tenant API Documentation](docs/tenant_crd.adoc)
 - [Policy Binding API Documentation](docs/policybinding_crd.adoc)

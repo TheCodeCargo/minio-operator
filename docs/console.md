@@ -7,7 +7,7 @@ This document explains how to enable Console with MinIO Operator.
 ### Prerequisites
 
 - MinIO Operator up and running as explained in the [document here](https://github.com/minio/operator#operator-setup).
-- Install [`kubectl minio` plugin](https://github.com/minio/operator/tree/master/kubectl-minio#install-plugin).
+- Install [`kubectl minio` plugin](https://github.com/TheCodeCargo/minio-operator/tree/master/kubectl-minio#install-plugin).
 
 ### Create MinIO Tenant
 

@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/operator/models"
+	"github.com/TheCodeCargo/minio-operator/models"
 )
 
 // UpdateTenantIdentityProviderHandlerFunc turns a function with the right signature into a update tenant identity provider handler

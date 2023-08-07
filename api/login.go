@@ -30,14 +30,14 @@ import (
 	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/minio/pkg/env"
 
+	"github.com/TheCodeCargo/minio-operator/api/operations"
+	authApi "github.com/TheCodeCargo/minio-operator/api/operations/auth"
+	"github.com/TheCodeCargo/minio-operator/models"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/operator/api/operations"
-	authApi "github.com/minio/operator/api/operations/auth"
-	"github.com/minio/operator/models"
 
-	"github.com/minio/operator/pkg/auth"
-	"github.com/minio/operator/pkg/auth/idp/oauth2"
+	"github.com/TheCodeCargo/minio-operator/pkg/auth"
+	"github.com/TheCodeCargo/minio-operator/pkg/auth/idp/oauth2"
 )
 
 func registerLoginHandlers(api *operations.OperatorAPI) {

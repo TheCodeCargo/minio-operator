@@ -23,7 +23,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/minio/operator/pkg"
+	"github.com/TheCodeCargo/minio-operator/pkg"
 
 	"k8s.io/client-go/tools/clientcmd"
 
@@ -32,8 +32,8 @@ import (
 
 	"k8s.io/klog/v2"
 
-	clientset "github.com/minio/operator/pkg/client/clientset/versioned"
-	informers "github.com/minio/operator/pkg/client/informers/externalversions"
+	clientset "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned"
+	informers "github.com/TheCodeCargo/minio-operator/pkg/client/informers/externalversions"
 	promclientset "github.com/prometheus-operator/prometheus-operator/pkg/client/versioned"
 	kubeinformers "k8s.io/client-go/informers"
 	"k8s.io/client-go/kubernetes"

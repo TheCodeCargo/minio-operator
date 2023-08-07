@@ -9,11 +9,11 @@ import (
 	"sync"
 	"time"
 
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
+	xhttp "github.com/TheCodeCargo/minio-operator/pkg/internal"
 	"github.com/gorilla/mux"
 	"github.com/minio/madmin-go/v2"
 	"github.com/minio/minio-go/v7/pkg/credentials"
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
-	xhttp "github.com/minio/operator/pkg/internal"
 	authv1 "k8s.io/api/authentication/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/klog/v2"

@@ -22,9 +22,9 @@ import (
 	"io"
 	"strings"
 
+	v2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 	"github.com/dustin/go-humanize"
 	"github.com/minio/kubectl-minio/cmd/helpers"
-	v2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
 	"github.com/spf13/cobra"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/klog/v2"

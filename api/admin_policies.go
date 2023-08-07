@@ -19,7 +19,7 @@ package api
 import (
 	"context"
 
-	"github.com/minio/operator/models"
+	"github.com/TheCodeCargo/minio-operator/models"
 )
 
 // SetPolicy calls MinIO server to assign policy to a group or user.

@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/operator/models"
+	"github.com/TheCodeCargo/minio-operator/models"
 )
 
 // OperatorSubnetAPIKeyInfoHandlerFunc turns a function with the right signature into a operator subnet API key info handler

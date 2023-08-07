@@ -33,11 +33,11 @@ import (
 
 	"github.com/minio/websocket"
 
-	v2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
+	v2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/minio/operator/pkg/auth"
+	"github.com/TheCodeCargo/minio-operator/pkg/auth"
 )
 
 func serveProxy(responseWriter http.ResponseWriter, req *http.Request) {

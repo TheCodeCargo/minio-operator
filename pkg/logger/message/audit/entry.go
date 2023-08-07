@@ -23,9 +23,9 @@ import (
 
 	"github.com/golang-jwt/jwt/v4"
 
-	"github.com/minio/operator/pkg/utils"
+	"github.com/TheCodeCargo/minio-operator/pkg/utils"
 
-	xhttp "github.com/minio/operator/pkg/http"
+	xhttp "github.com/TheCodeCargo/minio-operator/pkg/http"
 )
 
 // Version - represents the current version of audit log structure.

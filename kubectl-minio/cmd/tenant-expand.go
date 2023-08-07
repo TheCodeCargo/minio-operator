@@ -29,8 +29,8 @@ import (
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/yaml"
 
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
-	operatorv1 "github.com/minio/operator/pkg/client/clientset/versioned"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
+	operatorv1 "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned"
 	"github.com/spf13/cobra"
 )
 

@@ -20,7 +20,7 @@ import (
 	"net"
 	"strings"
 
-	operator "github.com/minio/operator/pkg/client/clientset/versioned"
+	operator "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned"
 	"github.com/minio/pkg/env"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"

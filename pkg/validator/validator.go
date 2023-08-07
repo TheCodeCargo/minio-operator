@@ -24,9 +24,9 @@ import (
 	"os"
 	"strings"
 
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
-	clientset "github.com/minio/operator/pkg/client/clientset/versioned"
-	"github.com/minio/operator/pkg/resources/statefulsets"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
+	clientset "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned"
+	"github.com/TheCodeCargo/minio-operator/pkg/resources/statefulsets"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/rest"
 	"k8s.io/klog/v2"

@@ -52,7 +52,7 @@ function install_operator() {
 
   OPR_LATEST=$(get_latest_release minio/operator)
     echo "  Load minio/operator image ($OPR_LATEST) to the cluster"
-	try kubectl apply -k "github.com/minio/operator/?ref=$OPR_LATEST"
+	try kubectl apply -k "github.com/TheCodeCargo/minio-operator/?ref=$OPR_LATEST"
     echo "Waiting for k8s api"
     sleep 10
     echo "Waiting for Operator Pods to come online (2m timeout)"

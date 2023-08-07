@@ -24,7 +24,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/operator/pkg/auth/idp/oauth2"
+	"github.com/TheCodeCargo/minio-operator/pkg/auth/idp/oauth2"
 
 	xcerts "github.com/minio/pkg/certs"
 

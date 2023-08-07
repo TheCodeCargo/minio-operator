@@ -34,22 +34,22 @@ import (
 
 	"github.com/klauspost/compress/gzhttp"
 
-	"github.com/minio/operator/pkg/logger"
-	"github.com/minio/operator/pkg/utils"
-	webApp "github.com/minio/operator/web-app"
+	"github.com/TheCodeCargo/minio-operator/pkg/logger"
+	"github.com/TheCodeCargo/minio-operator/pkg/utils"
+	webApp "github.com/TheCodeCargo/minio-operator/web-app"
 	"github.com/minio/pkg/env"
 	"github.com/minio/pkg/mimedb"
 
 	"github.com/unrolled/secure"
 
-	"github.com/minio/operator/pkg/auth"
+	"github.com/TheCodeCargo/minio-operator/pkg/auth"
 
 	"github.com/go-openapi/swag"
 
 	"github.com/go-openapi/errors"
 
-	"github.com/minio/operator/api/operations"
-	"github.com/minio/operator/models"
+	"github.com/TheCodeCargo/minio-operator/api/operations"
+	"github.com/TheCodeCargo/minio-operator/models"
 )
 
 //go:generate swagger generate server --target ../ --name Operator --spec ../swagger.yml --server-package api --principal models.Principal --exclude-main

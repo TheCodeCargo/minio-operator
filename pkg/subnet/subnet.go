@@ -23,7 +23,7 @@ import (
 	"github.com/minio/madmin-go/v2"
 	mc "github.com/minio/mc/cmd"
 
-	"github.com/minio/operator/pkg/http"
+	"github.com/TheCodeCargo/minio-operator/pkg/http"
 
 	"github.com/tidwall/gjson"
 )

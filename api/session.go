@@ -20,10 +20,10 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/TheCodeCargo/minio-operator/api/operations"
+	authApi "github.com/TheCodeCargo/minio-operator/api/operations/auth"
+	"github.com/TheCodeCargo/minio-operator/models"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/operator/api/operations"
-	authApi "github.com/minio/operator/api/operations/auth"
-	"github.com/minio/operator/models"
 )
 
 func registerSessionHandlers(api *operations.OperatorAPI) {

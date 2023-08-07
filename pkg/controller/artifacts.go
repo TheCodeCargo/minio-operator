@@ -29,16 +29,16 @@ import (
 
 	"k8s.io/klog/v2"
 
-	// Workaround for auth import issues refer https://github.com/minio/operator/issues/283
+	// Workaround for auth import issues refer https://github.com/TheCodeCargo/minio-operator/issues/283
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 	"github.com/google/go-containerregistry/pkg/authn"
 	"github.com/google/go-containerregistry/pkg/name"
 	"github.com/google/go-containerregistry/pkg/v1/remote"
 	"github.com/google/go-containerregistry/pkg/v1/tarball"
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
 )
 
 // minioKeychain implements Keychain to pass custom credentials

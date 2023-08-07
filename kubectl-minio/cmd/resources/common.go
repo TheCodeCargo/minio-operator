@@ -25,11 +25,11 @@ import (
 
 	"sigs.k8s.io/kustomize/kyaml/filesys"
 
-	"github.com/minio/operator/resources"
+	"github.com/TheCodeCargo/minio-operator/resources"
 
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
@@ -39,7 +39,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 
-	// Workaround for auth import issues refer https://github.com/minio/operator/issues/283
+	// Workaround for auth import issues refer https://github.com/TheCodeCargo/minio-operator/issues/283
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 
 	"k8s.io/client-go/scale/scheme"

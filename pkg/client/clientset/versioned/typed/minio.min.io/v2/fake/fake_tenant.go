@@ -23,8 +23,8 @@ import (
 	json "encoding/json"
 	"fmt"
 
-	v2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
-	miniominiov2 "github.com/minio/operator/pkg/client/applyconfiguration/minio.min.io/v2"
+	v2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
+	miniominiov2 "github.com/TheCodeCargo/minio-operator/pkg/client/applyconfiguration/minio.min.io/v2"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	types "k8s.io/apimachinery/pkg/types"

@@ -20,8 +20,8 @@ import (
 	"context"
 	"os"
 
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
-	"github.com/minio/operator/pkg/resources/services"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
+	"github.com/TheCodeCargo/minio-operator/pkg/resources/services"
 	"github.com/minio/pkg/env"
 	corev1 "k8s.io/api/core/v1"
 	v1 "k8s.io/api/core/v1"

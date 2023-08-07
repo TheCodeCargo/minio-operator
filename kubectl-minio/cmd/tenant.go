@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"io"
 
+	operatorv1 "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned"
 	"github.com/minio/kubectl-minio/cmd/resources"
-	operatorv1 "github.com/minio/operator/pkg/client/clientset/versioned"
 
 	"github.com/minio/kubectl-minio/cmd/helpers"
 	"github.com/spf13/cobra"

@@ -725,7 +725,7 @@ func (t *Tenant) CreateUsers(madmClnt *madmin.AdminClient, userCredentialSecrets
 			}
 		}
 
-		bucket := "test-bucket1"
+		bucket := "my-new-bucket"
 		policy := "mypolicy-test-user-update"
 		policyBytes := []byte(fmt.Sprintf(`{
 			"Version": "2012-10-17",
@@ -747,7 +747,7 @@ func (t *Tenant) CreateUsers(madmClnt *madmin.AdminClient, userCredentialSecrets
 		fmt.Printf("Adding custom canned policy")
 		madmClnt.AddCannedPolicy(ctx, policy, policyBytes)
 
-		if err := madmClnt.SetPolicy(ctx, "mypolicy-test-user-update", userAccessKey, false); err != nil {
+		if err := madmClnt.SetPolicy(ctx, ConsoleAdminPolicyName, userAccessKey, false); err != nil {
 			return err
 		}
 	}

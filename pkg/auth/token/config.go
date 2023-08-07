@@ -19,7 +19,7 @@ package token
 import (
 	"time"
 
-	"github.com/minio/operator/pkg/auth/utils"
+	"github.com/TheCodeCargo/minio-operator/pkg/auth/utils"
 	"github.com/minio/pkg/env"
 )
 

@@ -21,7 +21,7 @@ import (
 	"github.com/spf13/cobra"
 	"k8s.io/cli-runtime/pkg/genericclioptions"
 
-	// Workaround for auth import issues refer https://github.com/minio/operator/issues/283
+	// Workaround for auth import issues refer https://github.com/TheCodeCargo/minio-operator/issues/283
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 
 	// Statik CRD assets for our plugin

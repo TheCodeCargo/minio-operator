@@ -20,12 +20,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/minio/operator/pkg/utils"
+	"github.com/TheCodeCargo/minio-operator/pkg/utils"
 
+	"github.com/TheCodeCargo/minio-operator/api/operations"
+	"github.com/TheCodeCargo/minio-operator/api/operations/operator_api"
+	"github.com/TheCodeCargo/minio-operator/models"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/operator/api/operations"
-	"github.com/minio/operator/api/operations/operator_api"
-	"github.com/minio/operator/models"
 )
 
 func registerParityHandlers(api *operations.OperatorAPI) {

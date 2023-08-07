@@ -21,7 +21,7 @@ import (
 	"strings"
 	"sync"
 
-	v2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
+	v2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 	v1 "k8s.io/api/policy/v1"
 	"k8s.io/api/policy/v1beta1"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"

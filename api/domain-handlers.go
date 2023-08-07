@@ -19,11 +19,11 @@ package api
 import (
 	"context"
 
+	"github.com/TheCodeCargo/minio-operator/api/operations"
+	"github.com/TheCodeCargo/minio-operator/api/operations/operator_api"
+	"github.com/TheCodeCargo/minio-operator/models"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/operator/api/operations"
-	"github.com/minio/operator/api/operations/operator_api"
-	"github.com/minio/operator/models"
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

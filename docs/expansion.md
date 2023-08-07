@@ -32,11 +32,11 @@ There is only one requirement, i.e. based on initial pool's erasure set count (s
 
 ### Effects on KES/TLS Enabled Instance
 
-If your MinIO Operator configuration has [KES](https://github.com/minio/operator/blob/master/docs/kes.md) or [Automatic TLS](https://github.com/minio/operator/blob/master/docs/tls.md#automatic-csr-generation) enabled, there are additional considerations:
+If your MinIO Operator configuration has [KES](https://github.com/TheCodeCargo/minio-operator/blob/master/docs/kes.md) or [Automatic TLS](https://github.com/TheCodeCargo/minio-operator/blob/master/docs/tls.md#automatic-csr-generation) enabled, there are additional considerations:
 
 - When new pools are added, Operator invalidates older self signed TLS certificates and the related secrets. Operator then creates new certificate signing requests (CSR). This is because there are new MinIO nodes that must be added in certificate DNS names. The administrator must approve these CSRs for MinIO server to be deployed again. Unless the CSR are approved, Operator will not create MinIO StatefulSet pods.
 
-- If you're using your own certificates, as explained [here](https://github.com/minio/operator/blob/master/docs/tls.md#pass-certificate-secret-to-tenant), please ensure to use/update proper certificates that allow older and new MinIO nodes.
+- If you're using your own certificates, as explained [here](https://github.com/TheCodeCargo/minio-operator/blob/master/docs/tls.md#pass-certificate-secret-to-tenant), please ensure to use/update proper certificates that allow older and new MinIO nodes.
 
 ## Downtime
 

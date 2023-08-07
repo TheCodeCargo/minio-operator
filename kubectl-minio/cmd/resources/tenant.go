@@ -18,9 +18,9 @@ package resources
 import (
 	"errors"
 
+	operator "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 	"github.com/minio/kubectl-minio/cmd/helpers"
-	operator "github.com/minio/operator/pkg/apis/minio.min.io"
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

@@ -1,4 +1,4 @@
-module github.com/minio/operator/sts/example/go
+module github.com/TheCodeCargo/minio-operator/sts/example/go
 
 go 1.20
 

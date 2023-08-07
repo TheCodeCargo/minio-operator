@@ -24,9 +24,9 @@ import (
 	"fmt"
 	"time"
 
-	v2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
-	miniominiov2 "github.com/minio/operator/pkg/client/applyconfiguration/minio.min.io/v2"
-	scheme "github.com/minio/operator/pkg/client/clientset/versioned/scheme"
+	v2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
+	miniominiov2 "github.com/TheCodeCargo/minio-operator/pkg/client/applyconfiguration/minio.min.io/v2"
+	scheme "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

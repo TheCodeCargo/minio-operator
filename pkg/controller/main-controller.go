@@ -26,23 +26,23 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/TheCodeCargo/minio-operator/pkg/common"
 	"github.com/minio/madmin-go/v2"
-	"github.com/minio/operator/pkg/common"
 	xcerts "github.com/minio/pkg/certs"
 
+	"github.com/TheCodeCargo/minio-operator/pkg/controller/certificates"
 	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/minio/operator/pkg/controller/certificates"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/klog/v2"
 
 	"k8s.io/client-go/tools/leaderelection"
 	"k8s.io/client-go/tools/leaderelection/resourcelock"
 
-	miniov1 "github.com/minio/operator/pkg/apis/minio.min.io/v1"
+	miniov1 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v1"
 
 	"golang.org/x/time/rate"
 
-	// Workaround for auth import issues refer https://github.com/minio/operator/issues/283
+	// Workaround for auth import issues refer https://github.com/TheCodeCargo/minio-operator/issues/283
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 
 	appsv1 "k8s.io/api/apps/v1"
@@ -66,13 +66,13 @@ import (
 	"k8s.io/client-go/tools/record"
 	queue "k8s.io/client-go/util/workqueue"
 
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
-	clientset "github.com/minio/operator/pkg/client/clientset/versioned"
-	minioscheme "github.com/minio/operator/pkg/client/clientset/versioned/scheme"
-	informers "github.com/minio/operator/pkg/client/informers/externalversions/minio.min.io/v2"
-	stsInformers "github.com/minio/operator/pkg/client/informers/externalversions/sts.min.io/v1alpha1"
-	"github.com/minio/operator/pkg/resources/services"
-	"github.com/minio/operator/pkg/resources/statefulsets"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
+	clientset "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned"
+	minioscheme "github.com/TheCodeCargo/minio-operator/pkg/client/clientset/versioned/scheme"
+	informers "github.com/TheCodeCargo/minio-operator/pkg/client/informers/externalversions/minio.min.io/v2"
+	stsInformers "github.com/TheCodeCargo/minio-operator/pkg/client/informers/externalversions/sts.min.io/v1alpha1"
+	"github.com/TheCodeCargo/minio-operator/pkg/resources/services"
+	"github.com/TheCodeCargo/minio-operator/pkg/resources/statefulsets"
 )
 
 const (
@@ -1318,8 +1318,6 @@ func (c *Controller) syncHandler(key string) (Result, error) {
 			return WrapResult(Result{}, err)
 		}
 	}
-
-	klog.V(2).Infof("using the new version of the minio operator ==> ")
 
 	// Ensure we are only provisioning users one time
 	if !tenant.Status.ProvisionedUsers && len(tenant.Spec.Users) > 0 {

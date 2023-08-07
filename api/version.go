@@ -21,13 +21,13 @@ import (
 	"net/http"
 	"time"
 
-	xhttp "github.com/minio/operator/pkg/http"
+	xhttp "github.com/TheCodeCargo/minio-operator/pkg/http"
 
+	"github.com/TheCodeCargo/minio-operator/api/operations"
+	"github.com/TheCodeCargo/minio-operator/api/operations/user_api"
+	"github.com/TheCodeCargo/minio-operator/models"
+	"github.com/TheCodeCargo/minio-operator/pkg/utils"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/operator/api/operations"
-	"github.com/minio/operator/api/operations/user_api"
-	"github.com/minio/operator/models"
-	"github.com/minio/operator/pkg/utils"
 )
 
 func registerVersionHandlers(api *operations.OperatorAPI) {

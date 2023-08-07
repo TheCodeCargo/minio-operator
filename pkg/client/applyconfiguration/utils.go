@@ -19,10 +19,10 @@
 package applyconfiguration
 
 import (
-	v2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
-	v1alpha1 "github.com/minio/operator/pkg/apis/sts.min.io/v1alpha1"
-	miniominiov2 "github.com/minio/operator/pkg/client/applyconfiguration/minio.min.io/v2"
-	stsminiov1alpha1 "github.com/minio/operator/pkg/client/applyconfiguration/sts.min.io/v1alpha1"
+	v2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
+	v1alpha1 "github.com/TheCodeCargo/minio-operator/pkg/apis/sts.min.io/v1alpha1"
+	miniominiov2 "github.com/TheCodeCargo/minio-operator/pkg/client/applyconfiguration/minio.min.io/v2"
+	stsminiov1alpha1 "github.com/TheCodeCargo/minio-operator/pkg/client/applyconfiguration/sts.min.io/v1alpha1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 )
 

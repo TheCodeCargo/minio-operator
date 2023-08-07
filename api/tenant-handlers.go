@@ -28,17 +28,17 @@ import (
 	"strconv"
 	"time"
 
-	utils2 "github.com/minio/operator/pkg/http"
+	utils2 "github.com/TheCodeCargo/minio-operator/pkg/http"
 
 	"github.com/minio/madmin-go/v2"
 
-	"github.com/minio/operator/api/operations/operator_api"
+	"github.com/TheCodeCargo/minio-operator/api/operations/operator_api"
 
+	"github.com/TheCodeCargo/minio-operator/api/operations"
+	"github.com/TheCodeCargo/minio-operator/models"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
-	"github.com/minio/operator/api/operations"
-	"github.com/minio/operator/models"
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
 	corev1 "k8s.io/api/core/v1"
 	k8sErrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/api/resource"

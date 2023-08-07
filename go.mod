@@ -1,4 +1,4 @@
-module github.com/minio/operator
+module github.com/TheCodeCargo/minio-operator
 
 go 1.19
 

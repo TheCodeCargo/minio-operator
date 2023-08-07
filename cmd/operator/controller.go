@@ -15,8 +15,8 @@
 package main
 
 import (
+	"github.com/TheCodeCargo/minio-operator/pkg/controller"
 	"github.com/minio/cli"
-	"github.com/minio/operator/pkg/controller"
 )
 
 // starts the controller

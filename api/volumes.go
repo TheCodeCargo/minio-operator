@@ -21,12 +21,12 @@ import (
 	"fmt"
 	"sort"
 
-	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
+	miniov2 "github.com/TheCodeCargo/minio-operator/pkg/apis/minio.min.io/v2"
 
+	"github.com/TheCodeCargo/minio-operator/api/operations"
+	"github.com/TheCodeCargo/minio-operator/api/operations/operator_api"
+	"github.com/TheCodeCargo/minio-operator/models"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/operator/api/operations"
-	"github.com/minio/operator/api/operations/operator_api"
-	"github.com/minio/operator/models"
 	v1 "k8s.io/api/certificates/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
