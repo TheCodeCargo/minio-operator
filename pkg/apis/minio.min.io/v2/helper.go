@@ -715,6 +715,9 @@ func (t *Tenant) CreateUsers(madmClnt *madmin.AdminClient, userCredentialSecrets
 		// not created in MinIO but still need to have a policy assigned
 		if !skipCreateUser {
 			consoleSecretKey, ok := secret.Data["CONSOLE_SECRET_KEY"]
+			consolePolicy, policyok := secret.Data["CONSOLE_POLICY"]
+			consolePolicyPath, pathok := secret.Data["CONSOLE_POLICY_DEFINITION_PATH"]
+
 			// remove spaces and line breaks from secret key
 			userSecretKey := strings.TrimSpace(string(consoleSecretKey))
 			if !ok {
@@ -723,32 +726,24 @@ func (t *Tenant) CreateUsers(madmClnt *madmin.AdminClient, userCredentialSecrets
 			if err := madmClnt.AddUser(ctx, userAccessKey, userSecretKey); err != nil {
 				return err
 			}
-		}
 
-		bucket := "my-new-bucket"
-		policy := "mypolicy-test-user-update"
-		policyBytes := []byte(fmt.Sprintf(`{
-			"Version": "2012-10-17",
-			"Statement": [
-			{
-			"Effect": "Allow",
-			"Action": [
-				"s3:PutObject",
-				"s3:GetObject",
-				"s3:ListBucket"
-			],
-			"Resource": [
-				"arn:aws:s3:::%s/*"
-			]
+			if !policyok {
+				return errors.New("Policy is not provided for user")
 			}
-			]
-			}`, bucket))
+			if !pathok {
+				return errors.New("Policy path not provided for user")
+			}
 
-		fmt.Printf("Adding custom canned policy")
-		madmClnt.AddCannedPolicy(ctx, policy, policyBytes)
+			policy, err := os.ReadFile(consolePolicyPath)
 
-		if err := madmClnt.SetPolicy(ctx, ConsoleAdminPolicyName, userAccessKey, false); err != nil {
-			return err
+			klog.Infof(err.Error())
+
+			fmt.Printf("Adding custom canned policy")
+			madmClnt.AddCannedPolicy(ctx, consolePolicy, policy)
+
+			if err := madmClnt.SetPolicy(ctx, policy, userAccessKey, false); err != nil {
+				return err
+			}
 		}
 	}
 	return nil
