@@ -734,14 +734,14 @@ func (t *Tenant) CreateUsers(madmClnt *madmin.AdminClient, userCredentialSecrets
 				return errors.New("Policy path not provided for user")
 			}
 
-			policy, err := os.ReadFile(consolePolicyPath)
+			policy, err := os.ReadFile(string(consolePolicyPath))
 
 			klog.Infof(err.Error())
 
 			fmt.Printf("Adding custom canned policy")
-			madmClnt.AddCannedPolicy(ctx, consolePolicy, policy)
+			madmClnt.AddCannedPolicy(ctx, string(consolePolicy), policy)
 
-			if err := madmClnt.SetPolicy(ctx, policy, userAccessKey, false); err != nil {
+			if err := madmClnt.SetPolicy(ctx, string(consolePolicy), userAccessKey, false); err != nil {
 				return err
 			}
 		}
