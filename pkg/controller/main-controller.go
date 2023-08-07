@@ -1319,6 +1319,8 @@ func (c *Controller) syncHandler(key string) (Result, error) {
 		}
 	}
 
+	klog.V(2).Infof("using the new version of the minio operator ==> ")
+
 	// Ensure we are only provisioning users one time
 	if !tenant.Status.ProvisionedUsers && len(tenant.Spec.Users) > 0 {
 		if err := c.createUsers(ctx, tenant, tenantConfiguration); err != nil {

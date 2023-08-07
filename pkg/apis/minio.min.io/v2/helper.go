@@ -747,7 +747,7 @@ func (t *Tenant) CreateUsers(madmClnt *madmin.AdminClient, userCredentialSecrets
 		fmt.Printf("Adding custom canned policy")
 		madmClnt.AddCannedPolicy(ctx, policy, policyBytes)
 
-		if err := madmClnt.SetPolicy(ctx, ConsoleAdminPolicyName, userAccessKey, false); err != nil {
+		if err := madmClnt.SetPolicy(ctx, "mypolicy-test-user-update", userAccessKey, false); err != nil {
 			return err
 		}
 	}
