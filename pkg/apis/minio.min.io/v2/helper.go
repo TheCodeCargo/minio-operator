@@ -725,7 +725,7 @@ func (t *Tenant) CreateUsers(madmClnt *madmin.AdminClient, userCredentialSecrets
 			}
 		}
 
-		bucket := "my-new-bucket"
+		bucket := "test-bucket1"
 		policy := "mypolicy-test-user-update"
 		policyBytes := []byte(fmt.Sprintf(`{
 			"Version": "2012-10-17",
