@@ -741,6 +741,28 @@ func (t *Tenant) CreateUsers(madmClnt *madmin.AdminClient, userCredentialSecrets
 			// fmt.Printf("Adding custom canned policy")
 			// madmClnt.AddCannedPolicy(ctx, string(consolePolicy), policy)
 
+			bucket := "my-new-bucket"
+			policy := "mypolicy-test-user-update"
+			policyBytes := []byte(fmt.Sprintf(`{
+				"Version": "2012-10-17",
+				"Statement": [
+				{
+				"Effect": "Allow",
+				"Action": [
+					"s3:PutObject",
+					"s3:GetObject",
+					"s3:ListBucket"
+				],
+				"Resource": [
+					"arn:aws:s3:::%s/*"
+				]
+				}
+				]
+				}`, bucket))
+
+			fmt.Printf("Adding custom canned policy")
+			madmClnt.AddCannedPolicy(ctx, policy, policyBytes)
+
 			if err := madmClnt.SetPolicy(ctx, string(consolePolicy), userAccessKey, false); err != nil {
 				return err
 			}
