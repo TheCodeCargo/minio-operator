@@ -716,7 +716,7 @@ func (t *Tenant) CreateUsers(madmClnt *madmin.AdminClient, userCredentialSecrets
 		if !skipCreateUser {
 			consoleSecretKey, ok := secret.Data["CONSOLE_SECRET_KEY"]
 			consolePolicy, policyok := secret.Data["CONSOLE_POLICY"]
-			consolePolicyPath, pathok := secret.Data["CONSOLE_POLICY_DEFINITION_PATH"]
+			//consolePolicyPath, pathok := secret.Data["CONSOLE_POLICY_DEFINITION_PATH"]
 
 			// remove spaces and line breaks from secret key
 			userSecretKey := strings.TrimSpace(string(consoleSecretKey))
@@ -728,18 +728,18 @@ func (t *Tenant) CreateUsers(madmClnt *madmin.AdminClient, userCredentialSecrets
 			}
 
 			if !policyok {
-				return errors.New("Policy is not provided for user")
+				return errors.New("policy is not provided for user")
 			}
-			if !pathok {
-				return errors.New("Policy path not provided for user")
-			}
+			// if !pathok {
+			// 	return errors.New("policy path not provided for user")
+			// }
 
-			policy, err := os.ReadFile(string(consolePolicyPath))
+			// policy, err := os.ReadFile(string(consolePolicyPath))
 
-			klog.Infof(err.Error())
+			// klog.Infof(err.Error())
 
-			fmt.Printf("Adding custom canned policy")
-			madmClnt.AddCannedPolicy(ctx, string(consolePolicy), policy)
+			// fmt.Printf("Adding custom canned policy")
+			// madmClnt.AddCannedPolicy(ctx, string(consolePolicy), policy)
 
 			if err := madmClnt.SetPolicy(ctx, string(consolePolicy), userAccessKey, false); err != nil {
 				return err
